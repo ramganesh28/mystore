@@ -58,6 +58,7 @@ public class userTests2 {
 	@Test(priority = 2)
 	public void testbygetuser(){
 		Response response = userEndPoints2.getuser(this.userPayload.getId());
+		System.out.println("changes");
 		response.then().log().all();
 		
 	}
